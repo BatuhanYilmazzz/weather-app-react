@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = ({ getWeather }) => {
   return (
-    <form className='form' onSubmit={getWeather}>
+    <form className='form' onSubmit={getWeather} autoComplete='off'>
       <input
         type='text'
         name='city'

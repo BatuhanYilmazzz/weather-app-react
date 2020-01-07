@@ -6,22 +6,32 @@ import {
   WiStrongWind,
   WiHumidity
 } from 'react-icons/wi';
+import '../App.css';
 
-const Weather = ({ city, country, temperature, description, error }) => {
+const Weather = ({
+  city,
+  country,
+  temperature,
+  description,
+  windSpeed,
+  cloud,
+  humidity,
+  error
+}) => {
   return country ? (
     <div className='weather'>
       <div className='others'>
         <div className='others-spec'>
-          <WiCloud size={25} />
-          <p>5</p>
+          <WiCloud size={35} />
+          <p>{cloud}%</p>
         </div>
         <div className='others-spec'>
-          <WiStrongWind />
-          <p>6</p>
+          <WiStrongWind size={35} />
+          <p>{windSpeed}</p>
         </div>
         <div className='others-spec'>
-          <WiHumidity />
-          <p>6</p>
+          <WiHumidity size={35} />
+          <p>{humidity}</p>
         </div>
       </div>
       <div className='temp'>
@@ -29,17 +39,22 @@ const Weather = ({ city, country, temperature, description, error }) => {
         <WiCelsius size={60} />
       </div>
       <div className='city-name'>
-        <h2>
+        <h1>
           {city}, {country}
-        </h2>
+        </h1>
+        <p className='description'>{description}</p>
       </div>
-
-      <div>
-        <h1>{description}</h1>
+      <div className='weather-sit'>
         <WiDayLightWind size={100} />
       </div>
     </div>
-  ) : null;
+  ) : (
+    <div>
+      <br />
+      <br />
+      <h1>{error}</h1>
+    </div>
+  );
 };
 
 export default Weather;

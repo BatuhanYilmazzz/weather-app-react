@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
 .App {
   text-align: center;
   display: flex;
@@ -15,15 +23,17 @@
     rgba(20, 21, 24, 1) 0%,
     rgba(129, 95, 112, 1) 100%
   );
+  font-family: 'Nunito', sans-serif;
 }
 .app-wrapper {
   background-color: #9a6f84;
-  width: 400px;
-  height: 600px;
+  width: 40rem;
+  height: 60rem;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 31px -2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 31px -2px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px 31px -2px rgba(0, 0, 0, 0.9);
+  outline: none;
 }
 .form {
   align-items: center;
@@ -33,7 +43,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid #000;
-  margin: 1rem auto;
+  margin: 3rem auto;
   padding: 0.5rem;
 }
 .city::placeholder {
@@ -52,7 +62,7 @@
   color: #3e313a;
 }
 button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   background-color: #231f24;
   border: none;
   color: #9a6f84;
@@ -63,25 +73,48 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 2rem;
 }
 .temp-degree {
-  font-size: 60px;
+  font-size: 9rem;
+  margin-right: -1.5rem;
+  margin-top: -0.5rem;
 }
 .weather {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 300px;
+  height: 35rem;
   margin-top: 2rem;
 }
 .others {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 30rem;
+  margin-top: 1rem;
 }
 .others-spec {
   display: flex;
   align-items: center;
+}
+.others p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+input,
+textarea {
+  background-color: #3e313a;
+}
+.weather-sit {
+  margin-top: 1.5rem;
+}
+.description {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.city-name {
+  font-size: 1.2rem;
 }
