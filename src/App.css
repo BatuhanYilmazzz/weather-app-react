@@ -5,11 +5,7 @@
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-}
+
 .App {
   text-align: center;
   display: flex;
@@ -27,8 +23,8 @@ html {
 }
 .app-wrapper {
   background-color: #9a6f84;
-  width: 40rem;
-  height: 60rem;
+  width: 38rem;
+  height: 59rem;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 31px -2px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 0px 31px -2px rgba(0, 0, 0, 0.9);
@@ -42,18 +38,24 @@ html {
   display: block;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #4e3d47;
   margin: 3rem auto;
   padding: 0.5rem;
 }
 .city::placeholder {
   color: #3e313a;
 }
+.city-name {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -1rem;
+}
 .country {
   display: block;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #4e3d47;
   margin: 1rem auto;
   color: #3e313a;
   padding: 0.5rem;
@@ -61,6 +63,7 @@ html {
 .country::placeholder {
   color: #3e313a;
 }
+
 button {
   padding: 1rem 1.5rem;
   background-color: #231f24;
@@ -74,10 +77,11 @@ button {
   justify-content: center;
   align-items: flex-start;
   margin-top: 1rem;
+  margin-right: -2rem;
 }
 .temp-degree {
   font-size: 9rem;
-  margin-right: -1.5rem;
+  margin-right: -2rem;
   margin-top: -0.5rem;
 }
 .weather {
@@ -115,6 +119,12 @@ textarea {
   font-weight: bold;
   font-size: 1.4rem;
 }
-.city-name {
-  font-size: 1.2rem;
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .form {
+    margin-top: -1rem;
+  }
 }
