@@ -73,7 +73,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .temp-degree {
   font-size: 9rem;
@@ -108,12 +108,12 @@ textarea {
   background-color: #3e313a;
 }
 .weather-sit {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 .description {
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .city-name {
   font-size: 1.2rem;

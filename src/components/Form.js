@@ -11,7 +11,7 @@ const Form = () => {
     e.preventDefault();
     setCity('');
     setCountry('');
-    const data = await fetch(
+    await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}`
     )
       .then(res => res.json())
@@ -24,6 +24,7 @@ const Form = () => {
           windSpeed: data.wind.speed,
           cloud: data.clouds.all,
           humidity: data.main.humidity,
+          main: data.weather[0].main,
           error: ''
         })
       )
@@ -63,6 +64,7 @@ const Form = () => {
         windSpeed={weather.windSpeed}
         cloud={weather.cloud}
         humidity={weather.humidity}
+        main={weather.main}
         error={weather.error}
       />
     </React.Fragment>
