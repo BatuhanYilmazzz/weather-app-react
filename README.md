@@ -4,11 +4,11 @@
   <a href="https://github.com/BatuhanYilmazzz/WeatherAppReact#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/BatuhanYilmazzz/WeatherApp/commit-activity" target="_blank">
+  <a href="https://github.com/BatuhanYilmazzz/WeatherAppReact/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://twitter.com/batuhan38008916" target="_blank">
-    <img alt="Twitter: BatuhanYilmaz" src="https://img.shields.io/twitter/follow/YunusAybey.svg?style=social" />
+    <img alt="Twitter: BatuhanYilmaz" src="https://img.shields.io/twitter/follow/batuhan38008916.svg?style=social" />
   </a>
 </p>
 <p align="center">
