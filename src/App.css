@@ -16,13 +16,17 @@ html {
   background: rgb(20, 21, 24);
   background: linear-gradient(
     313deg,
-    rgba(20, 21, 24, 1) 0%,
-    rgba(129, 95, 112, 1) 100%
+    rgba(39, 34, 97, 1) 0%,
+    rgba(144, 53, 126, 1) 100%
   );
+
   font-family: 'Nunito', sans-serif;
 }
 .app-wrapper {
-  background-color: #9a6f84;
+  background: url(./components/img/warm-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 38rem;
   height: 59rem;
   border-radius: 10px;
