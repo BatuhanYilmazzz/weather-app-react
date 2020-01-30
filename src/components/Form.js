@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Weather from './Weather';
 
 const API_KEY = 'a019bdabf006a82f9325c183cfe1eb84';
@@ -7,24 +8,22 @@ const Form = () => {
   const [weather, setWeather] = useState([]);
   const [city, setCity] = useState('');
   const [country, setCountry] = useState('');
-  async function fetchData(e) {
+  const fetchData = e => {
     e.preventDefault();
-    setCity('');
-    setCountry('');
-    await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}`
-    )
-      .then(res => res.json())
-      .then(data =>
+    axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${API_KEY}`
+      )
+      .then(res =>
         setWeather({
-          city: data.name,
-          country: data.sys.country,
-          temperature: Math.round(data.main.temp - 273.15),
-          description: data.weather[0].description,
-          windSpeed: data.wind.speed,
-          cloud: data.clouds.all,
-          humidity: data.main.humidity,
-          main: data.weather[0].main,
+          city: res.data.name,
+          country: res.data.sys.country,
+          temperature: Math.round(res.data.main.temp - 273.15),
+          description: res.data.weather[0].description,
+          windSpeed: res.data.wind.speed,
+          cloud: res.data.clouds.all,
+          humidity: res.data.main.humidity,
+          main: res.data.weather[0].main,
           error: ''
         })
       )
@@ -33,7 +32,9 @@ const Form = () => {
           error: 'Please Type Correctly'
         })
       );
-  }
+    setCity('');
+    setCountry('');
+  };
 
   return (
     <React.Fragment>
