@@ -48,7 +48,7 @@ $ npm run start
 > Open `http://127.0.0.1:3000` using your favourite broswer, if it doesn't open automatically.
 and npm run start.
 
-### ✨ [Live Demo](https://BatuhanYilmazzz.github.io/WeatherAppReact/)
+### ✨ [Live Demo](https://weatherapp-batu.herokuapp.com/)
 
 
 ## Author
