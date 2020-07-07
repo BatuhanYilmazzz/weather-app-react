@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Weather from './Weather';
 
-const API_KEY = 'a019bdabf006a82f9325c183cfe1eb84';
+
 
 const Form = () => {
   const [weather, setWeather] = useState([]);
