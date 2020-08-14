@@ -1,18 +1,18 @@
 <h1 align="center">Weather App React</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/BatuhanYilmazzz/WeatherAppReact#readme" target="_blank">
+  <a href="https://github.com/BatuhanYilmazzz/weather-react-app#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/BatuhanYilmazzz/WeatherAppReact/commit-activity" target="_blank">
+  <a href="https://github.com/BatuhanYilmazzz/weather-react-app/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://twitter.com/batuhan38008916" target="_blank">
+  <a href="https://twitter.com/batuhnnylmazz" target="_blank">
     <img alt="Twitter: BatuhanYilmaz" src="https://img.shields.io/twitter/follow/batuhan38008916.svg?style=social" />
   </a>
 </p>
 <p align="center">
-  <a href="https://github.com/BatuhanYilmazzz/WeatherAppReact" target="_blank">
+  <a href="https://github.com/BatuhanYilmazzz/weather-react-app" target="_blank">
     Picture
   </a>
 </p>
@@ -34,12 +34,12 @@ This project is weather project with React Hooks including weather API.You can f
 > Clone the repository to your local machine
 
 ```sh
-$ --https://github.com/BatuhanYilmazzz/WeatherAppReact.git
+$ --https://github.com/BatuhanYilmazzz/weather-react-app.git
 ```
 > cd into the directory, install dependencies, build and start
 
 ```sh
-$ cd WeatherAppReact
+$ cd weather-react-app
 $ npm install
 $ npm run build
 $ npm run start
@@ -57,9 +57,9 @@ and npm run start.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/BatuhanYilmazzz/WeatherAppReact/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/BatuhanYilmazzz/weather-react-app/issues).
 
-1. Fork it (https://github.com/BatuhanYilmazzz/WeatherAppReact.git/fork)
+1. Fork it (https://github.com/BatuhanYilmazzz/weather-react-app.git/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
@@ -75,4 +75,4 @@ Give a ⭐️ if you like this project!
 
 
 - Github: [@BatuhanYilmazzz](https://github.com/BatuhanYilmazzz)
-- Twitter: [@BatuhanYilmaz](https://twitter.com/batuhan38008916)
+- Twitter: [@BatuhanYilmaz](https://twitter.com/batuhnnylmazz)
